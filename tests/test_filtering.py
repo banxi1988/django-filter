@@ -1,7 +1,7 @@
 import contextlib
 import datetime
-import mock
 import unittest
+from unittest import mock
 from operator import attrgetter
 
 from django import forms
@@ -978,7 +978,6 @@ class DateTimeFromToRangeFilterTests(TestCase):
         self.assertEqual(len(results.qs), 2)
 
 
-@unittest.expectedFailure
 class IsoDateTimeFromToRangeFilterTests(TestCase):
 
     def test_filtering(self):

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import inspect
-import mock
+from unittest import mock
 from collections import OrderedDict
 from datetime import date, datetime, time, timedelta
 
