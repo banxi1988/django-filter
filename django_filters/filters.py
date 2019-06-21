@@ -112,7 +112,7 @@ class Filter(object):
             if value is not None:
                 self.filter = FilterMethod(self)
 
-        return locals()
+        return {'fget':fget, 'fset': fset}
     method = property(**method())
 
     def label():
@@ -126,7 +126,7 @@ class Filter(object):
         def fset(self, value):
             self._label = value
 
-        return locals()
+        return {'fget':fget, 'fset': fset}
     label = property(**label())
 
     @property
